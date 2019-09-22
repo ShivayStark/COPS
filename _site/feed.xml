@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COPS IIT(BHU)</title>
+    <description>COPS Official Website, IIT(BHU) Varanasi, using Jekyll.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Sep 2019 18:42:01 +0530</pubDate>
+    <lastBuildDate>Sun, 22 Sep 2019 18:42:01 +0530</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>CSOC ML Week5</title>
+        <description>&lt;hr /&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Hello and welcome to week 5 of CSOC ML although it is not exactly that but let us go on with it. Hope that you have gone through most of the resources given to you till now and have found the resources helpful. This week we will start with some advanced topics like Neural Networks and Convolutional Neural Networks. The main aim from this week onwards will be to give you a general idea about the modern state of Machine Learning and provide you the resources which will act as starting points to explore and get an insight of the field. The materials provided may be too much to cover in just weeks(they will be!!) but as mentioned above these will act as a guide to you in the future so don’t force yourself with completing everything within 2 weeks!!&lt;/p&gt;
+
+&lt;h1 id=&quot;courses&quot;&gt;Courses&lt;/h1&gt;
+&lt;p&gt;Before we start I will be providing a list of awesome courses that you can do in these topic. These courses will give you a lot of knowledge about the field.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Andrew Ng’s Course on Deep Neural Networks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/convolutional-neural-networks&quot;&gt;Andrew Ng’s course on Convolutional Neural Networks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&quot;&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first two courses give you a strong idea and intuition about Neural Networks and Convolutional Neural Networks. The third is a more comprehensive and exhaustive course on both the subjects by Stanford University. Once you complete the course on Neural Networks(1st course), the third course is highly recommended. Take your time to go through these courses.&lt;/p&gt;
+
+&lt;h1 id=&quot;neural-networks&quot;&gt;Neural Networks&lt;/h1&gt;
+&lt;p&gt;Now coming to the more meatier part, what are &lt;strong&gt;neural networks&lt;/strong&gt;??? Neural networks are a set of algorithms, modeled loosely after the human brain, that is designed to recognize patterns. &lt;a href=&quot;https://youtu.be/aircAruvnKk&quot;&gt;This video&lt;/a&gt; will make things much clearer and give you an intuitive idea about neural networks. Now, the question arises how do the neural networks learn to identify or recognize patterns? These three videos will give you a clear idea about this:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IHZwWFHWa-w&quot;&gt;Gradient descent, how neural networks learn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Ilg3gGewQ5U&quot;&gt;Backpropagation and what is backpropagation really doing?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=tIeHLnjs5U8&amp;amp;t=10s&quot;&gt;Backpropagation calculus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Also for more insights go through the &lt;a href=&quot;http://neuralnetworksanddeeplearning.com/index.html&quot;&gt;first two chapters of this book&lt;/a&gt;. The two chapters explain things more mathematically with the appropriate code. So people who want strong mathematical justification(which should be all of you guys) this is a very good resource.&lt;/p&gt;
+
+&lt;h1 id=&quot;convolutional-neural-networks&quot;&gt;Convolutional Neural Networks&lt;/h1&gt;
+&lt;p&gt;If you have grasped the concept of neural networks clearly then understanding Convolutional Neural Networks(CNN in short) would not be hard. CNN’s are widely used with the data involved is images, although they have several other applications. The following blog will make things clearer:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53&quot;&gt;Blog 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/the-most-intuitive-and-easiest-guide-for-convolutional-neural-network-3607be47480&quot;&gt;Blog 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@RaghavPrabhu/understanding-of-convolutional-neural-network-cnn-deep-learning-99760835f148&quot;&gt;Blog 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?time_continue=381&amp;amp;v=FmpDIaiMIeA&quot;&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These blogs and videos will help you get good intuition about Convolutional Neural Network. We will be providing some more resources on this the next week. Go through the Stanford course and Andrew Ng’s course mentioned above for the more in-depth understanding of the concept and to get insight into more useful applications.&lt;/p&gt;
+
+&lt;h1 id=&quot;programming-libraries&quot;&gt;Programming libraries&lt;/h1&gt;
+&lt;p&gt;Now one question you may all have is “Do I have to code the Neural Networks and CNN’s from scratch along with backpropagation etc..”. The obvious answer is &lt;strong&gt;NO!!&lt;/strong&gt;. There are a lot of programming frameworks that do it for you and if you are considering going into this field knowledge about any one of these is a must. We will discuss two famous and widely used frameworks, Tensorflow and Pytorch.&lt;/p&gt;
+
+&lt;h2 id=&quot;tensorflow&quot;&gt;Tensorflow&lt;/h2&gt;
+&lt;p&gt;Many of you must have heard about this. TensorFlow(https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets you easily build and deploy ML powered applications. Tensorflow has changed a lot over time and its present integration with another deep learning framework &lt;strong&gt;Keras&lt;/strong&gt; has made it much easier to work on it. There are several tutorials on tensorflow available online. So just &lt;strong&gt;Google&lt;/strong&gt;. However to get started, go through this &lt;a href=&quot;https://www.tensorflow.org/tutorials/keras/basic_classification&quot;&gt;basic tutorial&lt;/a&gt;. More can be found on their official page.&lt;/p&gt;
+
+&lt;h2 id=&quot;pytorch&quot;&gt;Pytorch&lt;/h2&gt;
+&lt;p&gt;Pytorch(https://pytorch.org/) is another famous library for Deep learning. It is an open source deep learning platform that provides a seamless path from research prototyping to production deployment. The best thing about Pytorch is it is pythonic and hence very easy to learn. The best way to learn pytorch is through the &lt;a href=&quot;https://pytorch.org/tutorials/&quot;&gt;official tutorials&lt;/a&gt;. These are extremely good tutorials. &lt;a href=&quot;https://medium.com/deeplearningbrasilia/deep-learning-introduction-to-pytorch-5bd39421c84&quot;&gt;This blog&lt;/a&gt; also provides some great insights. Also, you can get several more resources on this just by &lt;strong&gt;Googling&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;colab&quot;&gt;Colab&lt;/h1&gt;
+&lt;p&gt;Bigger neural networks mean more and more computation and more and more time. Hence &lt;strong&gt;GPU’s (Graphics processing unit)&lt;/strong&gt; are a must if you want to train your networks fast. &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2017/05/gpus-necessary-for-deep-learning/&quot;&gt;This blog&lt;/a&gt; will explain the benefit of using a GPU and why they are essential for Deep learning. Now all of your systems may not have an Nvidia Graphics card or may not have the requirements to smoothly run ML algorithms. DO NOT WORRY!!. &lt;strong&gt;Colab&lt;/strong&gt; provides you free GPU’s!! Seriously!!. For anyone who doesn’t already know, Google has done the coolest thing ever by providing a free cloud service based on Jupyter Notebooks that support free GPU. You can use colab to run your ML algorithms and networks. All you need is a google account which is also free!!.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c&quot;&gt;This article&lt;/a&gt; will help you understand Colab and its functionalities. Make yourselves familiar with this platform as &lt;strong&gt;all the assignments in the coming weeks will be on Colab&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Well, a lot of material has been provided to you. Do not rush through it go through them slowly and if you get stuck anywhere ask your doubts in any of the various groups and get them cleared. These materials cover most of the import concepts in the field. So start with the first course on Neural Networks by Andrew Ng and then go through all the blogs and videos given in The Neural Networks and Convolutional Neural Networks section. Start with Tensorflow and make yourself familiar with Colab. This will be sufficient for the next assignment. Meanwhile, continue to go through the above-mentioned courses. 
+Also, all those who have submitted the assignment will get reviews through the email they have provided. So, ALL THE BEST!!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 26 Jun 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/06/26/CSOC-ML-Week-5.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/26/CSOC-ML-Week-5.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC ML Week4</title>
+        <description>&lt;p&gt;Hello and welcome to the week 4 of CSOC ML. Hope that you have gone through most of the resources given to you till now and have
+found the resources helpful. The resources cover the basics of Machine Learning and Data Science. We also hope you have completed the assignment 2 sincerely. Also the &lt;a href=&quot;https://github.com/COPS-IITBHU/csoc-ml2k19-assignment-3&quot;&gt;third assignment&lt;/a&gt; has been released. Today there wont be any more resources but we will discuss the assignment that you will be working on this week and the final task for the Data Science part of this programme. Continue going through whatever that has been provided to you untill now and complete it sincerely.&lt;/p&gt;
+
+&lt;h1 id=&quot;assignment&quot;&gt;Assignment&lt;/h1&gt;
+&lt;p&gt;There are no tasks in this assignment like the previous ones. We have provided you a dataset on which you will be working on. You have to analyse the data set and build models to get good prediction the data set. If you have gone through all the resources that has been provided to you untill now especially the blogs, you will have a clear idea as to how to do this. This task will tell us how much sincerely you have gone through the resources. More instructions are given in the &lt;a href=&quot;https://github.com/COPS-IITBHU/csoc-ml2k19-assignment-3&quot;&gt;jupyter nootebook&lt;/a&gt;. Remember do not copy from publicaly available solutions as this is to test your knowledge and for you to evaluate yourselves. You will have to explain the results you are getting and why you have done so. So blindly copying isnt going to help. There will be a form released soon where you will have to fill all these details.&lt;/p&gt;
+
+&lt;h1 id=&quot;final-task&quot;&gt;Final Task&lt;/h1&gt;
+&lt;p&gt;As promised in the previous blog the final task will be related to Kaggle. The &lt;a href=&quot;https://www.kaggle.com/c/titanic&quot;&gt;Titanic: Machine Learning from Disaster&lt;/a&gt; is a very famous and a begineer competition on Kaggle. In this competition you are required to apply the tools of machine learning to predict which passengers survived the tragedy. You are required to solve the challenge and make a submission on Kaggle. Take a screenshot of your submission i.e your score ,upload the code in your drive and fill the google form. If you have used Kaggle to write the code then provide the link of your notebook. You have time till June 30 midnight to complete this task. Again dont copy from others’ solution. Refer them to understand the various approaches that can be used and try to come up with your own solution.&lt;/p&gt;
+
+&lt;p&gt;This week marks the end of Data Science part of the programme. From next week onwards we will start with some advanced topics and dive into the amazing field of Computer Vision. Untill then ALL THE BEST!!!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Jun 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/06/09/CSOC-ML-Week-4.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/09/CSOC-ML-Week-4.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC Dev - Week 3</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;Hello and welcome to the week 3 of CSOC Dev. This week will cover essential web backend development using the popular web framework - Django!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-django&quot;&gt;What is Django?&lt;/h2&gt;
+&lt;p&gt;A Python-based web framework for ‘perfectionists with deadlines’, it is a battle-tested framework used to make websites from personal website to web apps for big companies like Instagram. One of its core principles is &lt;a href=&quot;https://docs.djangoproject.com/en/2.2/misc/design-philosophies/&quot;&gt;&lt;strong&gt;DRY&lt;/strong&gt; &lt;/a&gt; and promotes building a web app using &lt;a href=&quot;https://medium.com/shecodeafrica/understanding-the-mvc-pattern-in-django-edda05b9f43f&quot;&gt;&lt;strong&gt;MVC architecture&lt;/strong&gt;&lt;/a&gt;. &lt;a href=&quot;https://djangobook.com/mdj2-django-structure/&quot;&gt;This article&lt;/a&gt; is helpful to understand its project structure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/600/1*-PPNwQaTjVDViOM_xZzSwg.png&quot; alt=&quot;MVC pattern&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Understanding HTTP and some of its methods are a must - &lt;a href=&quot;https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340&quot;&gt;HTTP methods&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;any-tutorial&quot;&gt;Any tutorial?&lt;/h2&gt;
+&lt;p&gt;There’s lots of community around Django, and one of the most famous ones is &lt;a href=&quot;https://djangogirls.org/&quot;&gt;Django Girls&lt;/a&gt;. Here’s a tutorial from them: &lt;a href=&quot;https://tutorial.djangogirls.org/en/&quot;&gt;Django Girls Tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For authentication in Django, study from &lt;a href=&quot;https://wsvincent.com/django-user-authentication-tutorial-login-and-logout/&quot;&gt;this article&lt;/a&gt;.
+Try out logic of custom login in Django from &lt;a href=&quot;https://www.fir3net.com/Web-Development/Django/django.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Jun 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/06/08/CSOC-Dev-Week-3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/08/CSOC-Dev-Week-3.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC Dev - Week 2</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;Hello and welcome to the week 2 of CSOC Dev. I hope all of you liked messing around with branches and stuff.
+Did anyone try making their &lt;a href=&quot;https://myoctocat.com/build-your-octocat/&quot;&gt;Octocat&lt;/a&gt; yet? :D.
+This week will cover essential web frontend development using the fundamentals of fundamentals - HTML!&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-html&quot;&gt;What is HTML?&lt;/h1&gt;
+&lt;p&gt;No, it’s not a programming language first of all. Don’t even plan to write it in your CV as such :D. It’s a markup language
+to structure your document and it’s not constrained to be linear.
+That’s what &lt;a href=&quot;https://www.w3.org/WhatIs.html&quot;&gt;hypertext&lt;/a&gt; means in the full form of HTML - Hypertext Markup Language.&lt;/p&gt;
+
+&lt;h1 id=&quot;can-you-be-more-practical&quot;&gt;Can you be more practical?&lt;/h1&gt;
+&lt;p&gt;Okay, let’s start with useful stuff! To make any good-looking site of yours, which you want to admire and fawn over, you need three things - HTML, CSS and JS. Any front-end developer requires these three masterpieces.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.webcodegeeks.com/wp-content/uploads/2015/12/js-interview-questions-1.jpg.webp&quot; alt=&quot;Components of Web&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, when you get started to learn from the internet, there are millions of resources to learn. Let’s filter out some to learn only
+relevant stuff, not how to make your webpage run on old Netscape Navigator :D.
+First, learn anything which concerns with HTML5, CSS3 and JS (ES 5+). Those aren’t the latest; especially the JS has undergone lots of changes in ES6 specs.&lt;/p&gt;
+
+&lt;p&gt;Simplest site to learn basics of web dev is no doubt w3schools. So, get started on &lt;a href=&quot;https://www.w3schools.com/html/html_intro.asp&quot;&gt;HTML&lt;/a&gt; and &lt;a href=&quot;https://www.w3schools.com/css/css_intro.asp&quot;&gt;CSS&lt;/a&gt; from there.
+For CSS, don’t get lost there. Just learn syntax, how to use it and then keep the following references handy:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://htmlreference.io/&quot;&gt;HTML references&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cssreference.io/&quot;&gt;CSS references&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;When you don’t understand something in CSS, remember to search here: &lt;a href=&quot;https://css-tricks.com/&quot;&gt;CSS tricks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/&quot;&gt;God of answers :D&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For JS, it’s very, very vast. Start with this crash course first: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics&quot;&gt;https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And to practice using with your HTML page, read DOM Manipulation: &lt;a href=&quot;https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/&quot;&gt;https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 31 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/05/31/CSOC-Dev-Week-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/31/CSOC-Dev-Week-2.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC ML Week3</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;Hello and welcome to the week 3 of CSOC ML. Hope all of you are going through the resources given last week and have submitted the
+first assignment. The next two weeks we will be learning about Data Science. The topic is too huge to cover in two weeks but we will try to give you a very good idea about the field. Also the &lt;a href=&quot;https://github.com/COPS-IITBHU/csoc-ml2k19-assignment-1b&quot;&gt;second assignment&lt;/a&gt; on matplotlib and pandas has been released and the solution to first assignment will soon be released. You have time till next Wesdnesday midnight to submit the assignment. Do not forget to fill the google form after completing the assignment. Now coming to the resources of this week.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-data-science&quot;&gt;What is Data Science?&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1129/0*rNapZQnyP5EBLYli.png&quot; alt=&quot;data science&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Data Science is a huge field in itself. Its not just making complicated models and vizualization but its using data to make as much impact as possible. Here is an &lt;a href=&quot;https://www.youtube.com/watch?v=xC-c7E5PK0Y&quot;&gt;amazing video&lt;/a&gt; in which a data scientist talks about what actually is data science. This &lt;a href=&quot;https://datajobs.com/what-is-data-science&quot;&gt;blog&lt;/a&gt; will also give you a good idea about the various aspects of Data Science.&lt;/p&gt;
+
+&lt;h1 id=&quot;kaggle&quot;&gt;Kaggle&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://image.slidesharecdn.com/kaggleraddarslides2017-02-06-170307165813/95/tips-and-tricks-to-win-kaggle-data-science-competitions-1-638.jpg?cb=1488906029&quot; alt=&quot;kaggle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are intrested in data science then &lt;a href=&quot;https://www.kaggle.com/&quot;&gt;kaggle&lt;/a&gt; is the place for you. Kaggle is platform to compete with others in competitions which are based on machine learning tasks. You may know about Codechef, Hackerrank etc., so kaggle is also like them, but the key difference is the competition are only related to machine learning, data science, Deep learning or AI related. There are enormous amounts of resources, tutorials, datasets and code available on Kaggle. Its an amazing place to gain knowledge and start with compititive ML. With time kaggle will teach you a lot about Data Science and Machine Learning in general. Sign up on Kaggle and start exploring it. The interface is extremely simple and self explanatory. This &lt;a href=&quot;https://elitedatascience.com/beginner-kaggle&quot;&gt;blog&lt;/a&gt; will clearly explain and guide you through various aspects of kaggle. Your final assignment for the first part of CSOC ML will be related to kaggle so get comfortable with the platform.&lt;/p&gt;
+
+&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;Hope that all of you are going through the courses given to you last week. After you complete them go through these:&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Week 6(complete), Week 8(Dimentionality Reduction) and Week 10(complete) of &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Andrew Ng’s course&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Chapter 10 to 15 - Feature Scaling, Text Learning, Feature Selection, PCA, Validation, Evaluation Metrics of Intro to Machine Learning - &lt;a href=&quot;https://classroom.udacity.com/courses/ud120&quot;&gt;Udacity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These along with the previous lectures will give you a clear idea about analyzing data, creating and validating models when working with various data sets.&lt;/p&gt;
+
+&lt;p&gt;Here are some amazing resources which highlight various steps which must be undertaken which solving a data science problem. Go through them in order. These will be very helpful for solving the next week’s assignment. &lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492&quot;&gt;How to start a Data Science project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/data-manipulation-for-machine-learning-with-pandas-ab23e79ba5de&quot;&gt;Data Manipulation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0&quot;&gt;Feature engineering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Data visualization:&lt;br /&gt;
+&lt;a href=&quot;https://towardsdatascience.com/introduction-to-data-visualization-in-python-89a54c97fbed&quot;&gt;Tutorial 1&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://towardsdatascience.com/data-visualization-for-machine-learning-and-data-science-a45178970be7&quot;&gt;Tutorial 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/&quot;&gt;Applying Machine Learning algorithms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/&quot;&gt;Ensembling(advanced,optional)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It may be too overwhelming to complete soo many things and the assignments`and look into Dev and CP at the same time. Dont worry!!! Complete the lectures and go through the other resouces as much as possible. You dont have to complete everything in these four weeks(to write). Remember, understanding whatever you have learnt and practising it is more important than trying to hurry through all the materials. If you have put sincere efforts you wil definitely be able to do all the assignments in time. We will be back next week with more resources and assignment 3. So untill then ALL THE BEST and enjoy!!!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/05/30/CSOC-ML-Week-3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/30/CSOC-ML-Week-3.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC ML Week2</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;Hello and welcome to the week 2 of CSOC ML. Hope you have gone through and practiced all the materials given last week. This week we will learn about two more important libraries matplotlib and pandas. Along with this, starting this week, we will delve right into the core Machine Learning. Also the first &lt;a href=&quot;https://github.com/COPS-IITBHU/csoc-ml2k19-assignment-1a&quot;&gt;assignment&lt;/a&gt; has been released. You have time till next Wednesday(29-05-2019 23:59) to submit the assignment. Do not forget to fill the google form after completing the assignment. Now coming to the resources of this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;pandas&quot;&gt;pandas&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://pandas.pydata.org/_static/pandas_logo.png&quot; alt=&quot;pandas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Machine Learning deals with data, loads and loads of them. Understanding, analysing and manuplating this data is essential before applying Machine Learning algorithms. Pandas is a powerful data science library with provides you powerful functions to manipulate and analyze the data. Hence it is very essential to have a strong grasp over some basic functions in this library. Here are some of the good tutorial which you can refer.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html&quot;&gt;10 minutes to pandas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLQVvvaa0QuDc-3szzjeP6N6b0aDrrKyL-&quot;&gt;Tutorial series by sentdex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;matplotlib&quot;&gt;Matplotlib&lt;/h2&gt;
+&lt;p&gt;When working with data, we usually want to visualize it to understand the underlying patterns and get insights about the data. Matplotlib is another powerful Data Science library. As the name suggests it is a plotting library which provides powerful functions to plot the data points. A very interesting example demonstrating the importance of plotting is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Anscombe%27s_quartet?fbclid=IwAR3YacFroWXyQJIl1zC9wFZ4Eff5SGhIEsrHCPLpvSa5jbmCLx90Q4hEINE&quot;&gt;Anscombe’s quartet&lt;/a&gt;. Here are some excellent resources on Matplotlib.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py&quot;&gt;Official documentation of matplotlib&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm&quot;&gt;Amazing Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF&quot;&gt;First seven Videos of this tutorial series by Sentdex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1JW3UVEMBMNX9bEaRjUQGB01E9MP41OkpN2aCd2SyQsQ-EFeM&quot; alt=&quot;Machine Learning&quot; /&gt;&lt;br /&gt;
+Machine Learning has become one of the hottest topics of discussion and research today. Most of the big firms and industries are trying to integrate Machine Learning in their technology. But what is this Machine Learning? Machine Learning is an idea to learn from examples and experience, without being explicitly programmed. Instead of writing code, you feed data to the generic algorithm, and it builds logic based on the data given. Machine Learning has several applications. Face detection, Email Filtering, Chatbots, Weather prediction, medical diagnosis are some of them.
+There are three kinds of Machine Learning Algorithms. They are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Supervised Learning&lt;/li&gt;
+  &lt;li&gt;Unsupervised Learning&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Refer this amazing &lt;a href=&quot;https://towardsdatascience.com/what-are-the-types-of-machine-learning-e2b9e5d1756f&quot;&gt;blog&lt;/a&gt; to get a good insights of these algorithms. In the coming two weeks, we will cover the basics of Supervised Learning. We will be mainly referring to following two courses:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Andrew Ng&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.udacity.com/course/intro-to-machine-learning--ud120&quot;&gt;Machine Learning by udacity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have ever asked anyone as to how to start with Machine Learning you must have heard about this course. Going through the course will give you a firm understanding of Machine Learning concepts. Another intresting course is the ud-120, Intro to Machine Learning by Udacity. This course is a bit more hands-on than the former.&lt;br /&gt;
+In the next two weeks, you need to cover:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Week 1 - Introduction, Linear Regression with One Variable, Linear Algebra Review,&lt;/li&gt;
+  &lt;li&gt;Week 2 - Linear Regression with Multiple Variables,&lt;/li&gt;
+  &lt;li&gt;Week 3 - Logistic Regression, Regularization&lt;/li&gt;
+  &lt;li&gt;Week 7 - Support Vector Machines part of Machine Learning course by Andrew Ng&lt;/li&gt;
+  &lt;li&gt;The first seven chapters of Intro to Machine Learning course on Udacity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Be sure to take the the quizzes in Andrew Ng’s course althogh the assignments are optional. In Udacity’s course make sure you do the mini projects at the end of chapters sincerely. Start with the order given above. Doing this will give you a good intution on the core Machine Learning algorithms.&lt;br /&gt;
+There is a lot of material to cover So I suggest you start early. The assignment has also been kept short for the same reason. Dont feel down if you are feeling a bit rusty will the libraries. As you practise and implement them more and more your grasp on them will become stronger. Next week an assignment on Matplotlib and pandas will be released. Untill then All the best and happy learning!!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 22 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/05/22/CSOC-ML-Week-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/22/CSOC-ML-Week-2.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>CSOC ML Week1</title>
+        <description>&lt;hr /&gt;
+
+&lt;p&gt;Welcome to the first week of CSOC ML. This will be a two month long course where we will be developing various aspects of machine learning from basic concepts to advanced ones. There are no major prerequisites for this course. Only basic programming skills and some high school mathematics - linear algebra (matrices), calculus and probability is required. There will be a new blog every week containing all the resources for the week. There will be some links of exciting blogs which will help you gain a lot of knowledge so do go through them. So lets get started!!!&lt;/p&gt;
+
+&lt;h3 id=&quot;anaconda-installation&quot;&gt;Anaconda Installation&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png&quot; alt=&quot;Anaconda&quot; /&gt;&lt;br /&gt;
+Anaconda is a python and R distribution. It aims to provide everything you need (python wise) for machine learning “out of the box”. Installing this will setup Python and all the major data science libraries and Jupyter Notebook. here are some links to help you install Anaconda on Linux and Windows&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=DY0DB_NwEu0&quot;&gt;Anaconda Installation for linux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.anaconda.com/anaconda/install/windows/&quot;&gt;Anaconda Installation for windows&lt;/a&gt;&lt;br /&gt;
+&lt;b&gt;Note: &lt;/b&gt;If you are an linux user you can install the necessary libraries using &lt;b&gt;pip&lt;/b&gt;. pip is a package manager for python packages. In this case it is a good practise to create a virtual environment before installing various libraries.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jupyter-notebook&quot;&gt;Jupyter Notebook&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/250px-Jupyter_logo.svg.png&quot; alt=&quot;Jupyter&quot; /&gt;&lt;br /&gt;
+Throughout the course we will be using Jupyter Notebook for doing assignments so getting familiar with it is very necessary. Run the Jupyter Notebook by either starting the Anaconda Navigator or by typing jupyter notebook in the terminal. You can find a brief introduction of Jupyter Notebook in these tutorial.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs231n.github.io/ipython-tutorial/&quot;&gt;Brief introduction to Jupyter Notebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dataquest.io/blog/jupyter-notebook-tutorial/&quot;&gt;Tutorial on Jupyter Notebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.python.org/static/community_logos/python-logo-master-v3-TM.png&quot; alt=&quot;Python&quot; /&gt;&lt;br /&gt;
+Python and its Data Science libraries are used predominantly in competitive Machine Learning. Python is used even in Machine Learning research, because of its simplicity and availability of a wide array of machine learning libraries in Python. So it is essential to have a good grasp over Python.  If you have some basic knowledge of any programming language then learning python wont take long. The first nine chapters of the official documentation of Python is an excellent resource to start with. You can also watch the first 34 videos of Python series by Sentdex.Also you can practise by solving problems on Hackerrank. The links to all these resources are given below.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.python.org/3/tutorial/index.html&quot;&gt;Official documentation of Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M&quot;&gt;Awesome lecture series by Sentdex&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hackerrank.com/domains/python&quot;&gt;Practice problems on Hackerrank&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;numpy&quot;&gt;Numpy&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/800/1*mc5YIn7jvo5uwuqBOUDw7Q.jpeg&quot; alt=&quot;Numpy&quot; /&gt;&lt;br /&gt;
+The last task for the week would be to learn Numpy. NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more. Some references are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.numpy.org/&quot;&gt;Official documentation of numpy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datacamp.com/community/tutorials/python-numpy-tutorial&quot;&gt;Interactive tutorial on Numpy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.dataquest.io/m/289/introduction-to-numpy&quot;&gt;Another interactive tutorial(do check this out)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dataquest.io/blog/numpy-tutorial-python/&quot;&gt;Another tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;some-amazing-blogs-to-get-an-insight-of-machine-learning&quot;&gt;Some amazing blogs to get an insight of machine learning&lt;/h3&gt;
+&lt;p&gt;Here are links to some amazing blogs. Reading various blogs is a very good practise as it helps you gain immense amount of knowledge and helps to be up-to-date with the recent trends in technology.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/a-beginners-guide-to-machine-learning-5d87d1b06111&quot;&gt;A beginners guide to machine learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/future-today/understanding-artificial-intelligence-f800b51c767f&quot;&gt;Understanding AI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.education-ecosystem.com/10-artificial-intelligence-blogs/&quot;&gt;10 best AI blogs to follow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.datascience.com/blog/common-machine-learning-business-applications&quot;&gt;Machine Learning applications for business&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 15 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2019/05/15/CSOC-ML-Week-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2019/05/15/CSOC-ML-Week-1.html</guid>
+        
+        <category>knowledge</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>What’s new in Java 8: Lambdas</title>
+        <description>&lt;h1 id=&quot;whats-new-in-java-8-lambdas-octocat&quot;&gt;What’s new in Java 8: Lambdas :octocat:&lt;/h1&gt;
+&lt;h2 id=&quot;a-hands-on-introduction-to-java-8s-most-exciting-new-feature-sparkles&quot;&gt;A hands-on introduction to Java 8’s most exciting new feature :sparkles:&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By Yash Raj Bharti | Metallurgical engineering | 2018-12-03
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/f/f1/Greek_lc_lamda.png&quot; alt=&quot;lambda&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Java 8 is here, and, with it, come lambdas. Although long overdue, lambdas are a remarkable new feature that could make us rethink our programming styles and strategies. In particular, they offer exciting new possibilities for functional programming.&lt;/p&gt;
+
+&lt;p&gt;While lambdas are the most prominent addition to Java 8, there are many other new features, such as functional interfaces, virtual methods, class and method references, new time and date API, JavaScript support, and so on. In this post, I will focus mostly on lambdas and their associated features, as understanding this feature is a must for any Java programmer on-boarding to Java 8.&lt;/p&gt;
+
+&lt;p&gt;All of the code examples mentioned in this post can be found in &lt;a href=&quot;https://github.com/yashrajbharti/-/edit/master/Lambda.md&quot;&gt;this github repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-lambdas-octocat&quot;&gt;What are lambdas? :octocat:&lt;/h2&gt;
+
+&lt;p&gt;Lambdas are succinctly expressed single method classes that represent behaviour. They can either be assigned to a variable or passed around to other methods just like we pass data as arguments.&lt;/p&gt;
+
+&lt;p&gt;You’d think we’d need a new function type to represent this sort of expression. Instead, Java designers cleverly used existing interfaces with one single abstract method as the lambda’s type.&lt;/p&gt;
+
+&lt;p&gt;Before we go into detail, let’s look at a few examples.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Example Lambda Expressions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are a few examples of lambda expressions:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Concatenating strings&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Squaring up two integers&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Summing up the trades quantity&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Expecting no arguments and invoking another method&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Have a look at them once again until you familiarize yourself with the syntax. It may seem a bit strange at first. We will discuss the syntax in the next section.&lt;/p&gt;
+
+&lt;p&gt;You might wonder what the type is for these expressions. The type of any lambda is a functional interface, which we discuss below.&lt;/p&gt;
+
+&lt;h2 id=&quot;lambda-syntax-octocat&quot;&gt;Lambda Syntax :octocat:&lt;/h2&gt;
+
+&lt;p&gt;There is a special syntax to create and represent a lambda expression. Just like a normal Java method, a lambda expression has input arguments, a body, and an optional return value. This is illustrated here below:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;input arguments -&amp;gt; body&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Each lambda expression has two parts separated by an arrow token: the left hand side is our method arguments, and the right hand side is what we do with those arguments (that is, applying business logic). The body can either be an expression or block of code, returning a result or void.&lt;/p&gt;
+
+&lt;p&gt;So, in the first lambda expression, (String s1, String s2) → s1+s2, the left hand side of the arrow (→) token is our method argument list. The arguments to the method are supplied as two strings. Coming to the right hand side part, the logic that we are applying in the method is what we are expressing here.&lt;/p&gt;
+
+&lt;p&gt;So, from our example, all we need to do is—given two strings, concatenate them up! Whatever logic we put in a method, can go here in this block. In our example, it is adding the both input arguments: s1+s2. The right hand side is the body where we can write statements, expressions, code blocks, calling other methods, etc.&lt;/p&gt;
+
+&lt;p&gt;Lambda’s Type: the Functional Interface&lt;/p&gt;
+
+&lt;p&gt;I briefly mentioned earlier that the type of a lambda is a functional interface. As Java is a strongly typed language, it is usually mandatory to declare types; otherwise, the compiler laughs at us. Note, however, that we omitted types when declaring the above lambda expressions. So, what is the type of a lambda expression? Is it a string, an object, or a new functional type?&lt;/p&gt;
+
+&lt;p&gt;Fortunately, there is no new addition to the type system—the designers of Java did not introduce any special type to represent lambda expressions. Instead, they cleverly re-used the existing anonymous method strategy. We’re already familiar with anonymous classes, so picking up this new representation should be relatively straight forward.&lt;/p&gt;
+
+&lt;p&gt;A functional interface is a special interface with one and only one abstract method. It is exactly the same as our normal interface, but with two additional characteristics:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It has one and only one abstract method.&lt;/li&gt;
+  &lt;li&gt;It can be decorated with an optional @FunctionalInterface annotation to be used as a lambda expression. (this is strongly suggested)
+Java has numerous single method interfaces. These are all retrofitted, making them functional interfaces. If we want to create our own, all we need to do is to define an interface with one abstract method and stick a @FunctionalInterface annotation on top of it!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, the following snippet defines an &lt;strong&gt;IAddable&lt;/strong&gt; interface. This is a functional interface whose job is to simply add two identical items of type T.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@FunctionalInterface&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// To add two objects&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Because this interface has one and only one abstract method and it is annotated with @FunctionalInterface, it can be used as a type for representing lambda functions.&lt;/p&gt;
+
+&lt;p&gt;Below are some example representations that use the above IAddable functional interface here:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Our interface implementations using Lambda expressions&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Joining two strings—note the interface is a generic type&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringAdder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Squaring the number&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Summing up the trades quantity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tradeAdder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Note that the &lt;strong&gt;IAddable&lt;/strong&gt; is a generic type interface, therefore we’re using it to add different types, as in the above example.&lt;/p&gt;
+
+&lt;p&gt;To summarize, the lambda expression’s type is the functional interface that we intended to implement via the lambda expression.&lt;/p&gt;
+
+&lt;p&gt;Once we have the implementations ready, we can use them in our class by simply invoking the respective method. See the example below, which shows how the above implementations are being used.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// A lambda expression for adding two strings.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringAdder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// this method adds the two strings using the first lambda expression&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addStrings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Concatenated Result: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringAdder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Before we move on, let’s take a moment to understand what is achieved here. The noticeable thing is that we are now treating the business logic as a function that can be tossed around for execution. We can define numerous variations of the business logic on the fly (kind of!) without having to create and instantiate classes as we used to do before.&lt;/p&gt;
+
+&lt;p&gt;Now that we understand a bit about lambda expressions and their types, let’s run through a complete example using lambdas. We’ll also compare and contrast with the pre-Java 8 version to understand the differences.&lt;/p&gt;
+
+&lt;h2 id=&quot;lambda-example-octocat&quot;&gt;Lambda Example :octocat:&lt;/h2&gt;
+
+&lt;p&gt;Our requirement is to create business logic for merging two trades issued by the same issuer. This example should solve the requirement by using both pre-Java 8 and Java 8 approaches.&lt;/p&gt;
+
+&lt;h3 id=&quot;pre-java-8-implementation-sparkles&quot;&gt;Pre-Java 8 Implementation :sparkles:&lt;/h3&gt;
+
+&lt;p&gt;Prior to Java 8, we were expected to implement the interface with concrete definitions, as shown in the test class below:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testPreJava8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tradeMerger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here, we created a concrete class implementing the interface and invoked the add method on the instantiated object. We used an anonymous strategy for creating the code shown above.&lt;/p&gt;
+
+&lt;p&gt;Although the actual logic of merging the trades is our core logic, we are forced to do some additional tasks such as implementing the interface with a class identity, overriding the abstract method, creating an instance of it and finally doing something with the instance. This “excess baggage” has always attracted critics and made developers uneasy—it’s a lot of boiler plate code and meaningless implementations and instantiations for a piece of business logic.&lt;/p&gt;
+
+&lt;p&gt;Once we have the instance of the class, we follow the usual process of invoking the respective methods on the instance, as shown below:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;....;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;GOOG&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;NEW&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;GOOG&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;NEW&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// using the conventional anonymous class..&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergedTrade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tradeMerger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The business logic is intertwined with the technical garbage. The core logic is very much tied to the implementing class. For example, instead of returning a merged trade as in the above case, if I may have to compare and return the big trade, I have to sigh a bit, grab a coffee, sneeze loudly, moan, groan and roll up my sleeves and get ready to rewrite the code logic.&lt;/p&gt;
+
+&lt;p&gt;Note also that all our test cases will start failing too once we change the logic!&lt;/p&gt;
+
+&lt;p&gt;What if I have to support dozens of such requirements? Well, either I have to hack the current method to create the additional logic path using a control statement (if-else or switch) or create a new class for each piece of logic. Tightly coupling your business logic to its implementing class is asking for trouble—especially if we have fickle-minded business analysts and project managers. Surely there must be a better way to make it work.&lt;/p&gt;
+
+&lt;h2 id=&quot;java-8-implementation-octocat&quot;&gt;Java 8 Implementation :octocat:&lt;/h2&gt;
+
+&lt;p&gt;Creating multiple behaviors using anonymous classes is not impossible, but it’s not ideal. We can simplify this problem by using lambda functions to represent various behaviors. So, for example, we can write a lambda expression to sum up the trade’s quantities, another for returning a large trade, another expression for encrypting trade data, etc. All we do is write a lambda expression for each of the requirements and send it over to the class that expects the lambda.&lt;/p&gt;
+
+&lt;p&gt;For example, take a look at this list of lambda expressions for our requirements:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Summing up the trades quantity&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aggregatedQty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Return a large trade&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;largeTrade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getQuantity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Encrypting the trades (Lambda uses an existing method)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encryptTrade&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encrypt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;As&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;see&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;we&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;declared&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lambdas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;our&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;respective&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;functionalities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modeled&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shown&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;below:&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;//A generic method with an expected lambda&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;applyBehaviour&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IAddable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trade&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;addable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Note that the method is generic enough that it can apply functionality to any two trades with the given behavior using the given lambda expression (the IAddable interface).&lt;/p&gt;
+
+&lt;p&gt;Now, the client has the control of creating the behaviors and pass it on to the remote server for application of them. This way, the client cares about &lt;em&gt;what&lt;/em&gt; to do, while the server cares about &lt;em&gt;how&lt;/em&gt; to do it. As long as the interface is designed to accept the lambda expression, the client can create a number of those expressions according to its requirements and invoke the method.&lt;/p&gt;
+
+&lt;p&gt;Before we sum up, let’s take an existing Runnable interface, which comes with lambda support, and see how it can be used.&lt;/p&gt;
+
+&lt;h2 id=&quot;runnable-functional-interface-octocat&quot;&gt;Runnable Functional interface :octocat:&lt;/h2&gt;
+
+&lt;p&gt;The most popular Runnable interface has one method, run, which takes no arguments and returns nothing. Perhaps the reasoning behind this is that a piece of logic is to be run in a separate thread to speed up the process.&lt;/p&gt;
+
+&lt;p&gt;The new definition of Runnable interface, followed by an example implementation using an anonymous class, is given below:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// The functional interface&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@FunctionalInterface&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Runnable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// example implementation&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Runnable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sendAnEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;As you can see the above way of creating and using the anonymous class is very verbose—and unsightly too. Apart from sendAnEmail() in the run method, everything else is redundant boilerplate code.&lt;/p&gt;
+
+&lt;p&gt;The same Runnable can now be re-written to use a lambda expression, as shown below:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// The constructor now takes in a lambda&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendAnEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The lambda expression () → sendAnEmail() highlighted above is passed to the constructor of the thread. Note that this expression is effectively a piece of code (an instance of Runnable) that carries certain behavior (make sure to always send an email in a new thread).&lt;/p&gt;
+
+&lt;p&gt;Looking at the expression, we can deduce the type of the lambda—in this case it is Runnable, as we all know that the thread constructor accepts a Runnable. If you’ve noticed the redefined interface definition, Runnable is now a functional interface and hence tagged with the @FunctionalInterface annotation. Now the lambda expression can be assigned to a class’s variable as Runnable r = () → sendAnEmail() just like how we declare and assign variables.&lt;/p&gt;
+
+&lt;p&gt;This is the power of lambdas—they allow us to pass a behavior to a method, assigned to a variable (free floating) from another method, just like we do when passing arguments that carry data.&lt;/p&gt;
+
+&lt;p&gt;Let’s suppose we have a server side class called AsyncManager whose sole purpose is to execute requests on different threads. It has a single method, runAsync, which accepts a Runnable, as shown below:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AsyncManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;runAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Runnable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The client now has the ability to create a plethora of lambda expressions based on his requirements. For example, see the various lambda expressions that can be passed on to the server-side class:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;runAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Running in Async mode&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;runAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sendAnEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;manager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;runAsync&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;persistToDatabase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;goToMoon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;returnFromMars&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sendAnEmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;summary-octocat&quot;&gt;Summary :octocat:&lt;/h2&gt;
+
+&lt;p&gt;In this post, we learned about the biggest change Java has ever seen. Lambdas will certainly steer the direction of Java and make it more appealing to varied sections of the programmer community.
+:sparkles:&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Dec 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/12/03/Whats-new-in-Java-8-Lambdas.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/12/03/Whats-new-in-Java-8-Lambdas.html</guid>
+        
+        <category>Java</category>
+        
+        <category>New feature</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Creating an ML based Python API hosted on heroku</title>
+        <description>&lt;h1 id=&quot;creating-an-ml-based-python-api-hosted-on-heroku&quot;&gt;Creating an ML based Python API hosted on Heroku&lt;/h1&gt;
+
+&lt;p&gt;Since long I’ve been thinking of creating an API which fellow developers could use over cloud. But I didn’t want it to be the traditional &lt;a href=&quot;https://github.com/shubhamvadhera/hello-world-rest&quot;&gt;Hello World API&lt;/a&gt; or &lt;a href=&quot;https://medium.com/python-pandemonium/build-simple-restful-api-with-python-and-flask-part-1-fae9ff66a706&quot;&gt;simple SQL Flask API&lt;/a&gt;  —  supporting the classical user name and email ID GET, PUT, POST, DELETE REST requests. Since AI and ML are so pervasive now, I thought of giving ML a try — and it is easy : )&lt;/p&gt;
+
+&lt;h2 id=&quot;image-classification-using-pytorch&quot;&gt;Image Classification using PyTorch&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*t6hCM90evdnlPw4l9VK3AQ.png&quot; alt=&quot;PyTorch Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since everything’s on the cloud and the free versions I needed an AI/ML project with small, lightweight dependencies for the cloud. I forked a project named &lt;a href=&quot;https://github.com/christiansafka/img2vec&quot;&gt;Img2vec&lt;/a&gt; that uses PyTorch to generate feature vectors for a dataset of images and then does a simple match(&lt;a href=&quot;http://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html&quot;&gt;cosine similarity&lt;/a&gt; in &lt;strong&gt;sklearn&lt;/strong&gt;) of a test image with others using pretrained models. The readme provides enough snippets to make the demo work on your system.&lt;/p&gt;
+
+&lt;h2 id=&quot;training-the-image-data-set&quot;&gt;Training the image data set&lt;/h2&gt;
+
+&lt;p&gt;For the sake of simplicity, I’m skipping the data set training part — there are lot of docs over the internet. For our API purpose, I’m generating image vectors and storing them as &lt;strong&gt;csv&lt;/strong&gt; files. Since computations will happen over cloud, if we generate vectors on runtime, the API will always timeout. But the API will generate vector for the image data you’ll ping and read other vectors from csv files.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-the-flask-app&quot;&gt;Setting up the Flask app&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*H3aEP7X3hd7wVCigrF3O1Q.png&quot; alt=&quot;Flask Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For a simple image match, I needed a POST or PUT request. There are many frameworks that support REST features, I used flask on Python 3.6. As the official site reads&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So here’s the idea:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server receives an image as byte stream&lt;/li&gt;
+  &lt;li&gt;Those bytes are encoded back to an image using &lt;a href=&quot;https://pillow.readthedocs.io/en/5.1.x/&quot;&gt;Pillow&lt;/a&gt; in Python&lt;/li&gt;
+  &lt;li&gt;A feature vector is generated for that image&lt;/li&gt;
+  &lt;li&gt;That vector is matched against the training data images&lt;/li&gt;
+  &lt;li&gt;Closest matching images are returned back (with a download URL and a percentage match value)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s the gist of the API :&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# endpoint to detect image
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/image_clustering&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;PUT&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;image_clustering&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Image converted in Base64 encoded byte stream
+&lt;/span&gt;    &lt;span class=&quot;nb&quot;&gt;bytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# returns a list of image matches
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The test Image posted is not normal byte stream, its base64 encoded image byte stream — a standard way to ship &lt;a href=&quot;https://stackoverflow.com/questions/201479/what-is-base-64-encoding-used-for&quot;&gt;binary data across networks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Get the source &lt;a href=&quot;https://github.com/AKS1996/k-means-clustering-api&quot;&gt;code here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-the-heroku-server&quot;&gt;Setting up the Heroku server&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*w2RAR48UbSAYv-6y_V-cdA.png&quot; alt=&quot;Heroku Logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Setting up the server is pretty straight forward, but there are a few issues I encountered:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Slug Size&lt;/strong&gt;: Heroku provides a max slug size of 500 MB, the total data an app can hold(code, executables, and media files like images, pdfs) after compression. This is an issue since python libraries like SciPy and PyTorch are pretty hefty in size — PyTorch with CUDA 8 is ~600MB alone. But there are workarounds.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PyTorch Version&lt;/strong&gt;: PyTorch provides a CPU only build variant, a small 45 MB library providing all the features we need for deployment.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SciPy Manual Install&lt;/strong&gt;: Don’t know why, but an online install of SciPy on Heroku turns out to be buggy(more of it &lt;a href=&quot;https://stackoverflow.com/a/37648960/8243704&quot;&gt;here&lt;/a&gt;. Instead I downloaded the SciPy whl(or the source code) as a file and manually installed it on the server.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;JPEG vs PNG&lt;/strong&gt;: In the demo code, I’ve used JPEG extension files(with base64 encoded data beginning from /9j/9…). So if you ping the server with images in other formats like PNG(base64 encoded data starts with iVi…) you will get an error.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;demo-time&quot;&gt;Demo Time&lt;/h2&gt;
+&lt;p&gt;You can take a demo in many ways&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can install an app(&lt;a href=&quot;https://github.com/AKS1996/k-means-clustering-api/blob/master/ImageMatch.apk&quot;&gt;get it here&lt;/a&gt;) on your android device. Click an image it’ll take some time and will display the closest matching images.&lt;/li&gt;
+  &lt;li&gt;You can use &lt;a href=&quot;https://github.com/AKS1996/k-means-clustering-api/blob/master/sample_python_script.py&quot;&gt;this python script&lt;/a&gt;. Just enter the relative path of the image on your desktop and it will display the results&lt;/li&gt;
+  &lt;li&gt;You can make a PUT request online(I recommend &lt;a href=&quot;https://www.hurl.it/&quot;&gt;Hurl.it&lt;/a&gt; for starters) to &lt;a href=&quot;http://beard-app.herokuapp.com/image_clustering&quot;&gt;this URL&lt;/a&gt; with base64 encoded image data as body.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the sample cat image shown, the results are&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Bo-R0IHSwuCVQOceaS9X1Q.jpeg&quot; alt=&quot;cat&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.8155140106062471&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.googleapis.com/download/storage/v1/b/python-clustering-api.appspot.com/o/images%2FFace%2F124.jpg?generation=1522585329188523&amp;amp;alt=media&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.8145577585207011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.googleapis.com/download/storage/v1/b/python-clustering-api.appspot.com/o/images%2FFace%2F242.jpg?generation=1522585299229997&amp;amp;alt=media&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.7914929138145477&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.googleapis.com/download/storage/v1/b/python-clustering-api.appspot.com/o/images%2FFace%2F212.jpg?generation=1522584727478100&amp;amp;alt=media&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.7806927914191767&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.googleapis.com/download/storage/v1/b/python-clustering-api.appspot.com/o/images%2FFace%2F099.jpg?generation=1522585251917855&amp;amp;alt=media&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.6948463995381056&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.googleapis.com/download/storage/v1/b/python-clustering-api.appspot.com/o/images%2FFace%2F119.jpg?generation=1522584693369035&amp;amp;alt=media&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If the article helped you, &lt;strong&gt;please comment below&lt;/strong&gt;. Feel free to ask if faced any problems reading the article.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Apr 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/04/15/ML-Python-API-Heroku.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/04/15/ML-Python-API-Heroku.html</guid>
+        
+        <category>PyTorch</category>
+        
+        <category>Flask</category>
+        
+        <category>Heroku</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Setting Up ArUco on your PC</title>
+        <description>&lt;h1 id=&quot;setting-up-aruco-library-on-your-pc&quot;&gt;Setting up ArUco Library on your PC&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*zAidwmEHUvUtuqWEJRBQiA.jpeg&quot; alt=&quot;ArUco + OGRE demo. Credits : https://sourceforge.net/projects/aruco/&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The ArUco library for OpenCV is a lightweight C++ wrapper for Augmented Reality applications. Its simple, efficient and versatile enough to detect hundreds of unique AR markers.&lt;/p&gt;
+
+&lt;h2 id=&quot;pre-requisites&quot;&gt;Pre Requisites&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Setup OpenCV on your PC. Get the &lt;a href=&quot;https://docs.opencv.org/master/df/d65/tutorial_table_of_content_introduction.html&quot;&gt;installation instructions here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Basic CMake knowledge. For starters, first two steps of the &lt;a href=&quot;https://cmake.org/cmake-tutorial&quot;&gt;official documentation&lt;/a&gt; will be enough.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installing-aruco-library&quot;&gt;Installing ArUco Library&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;https://sourceforge.net/projects/aruco/&quot;&gt;latest release package&lt;/a&gt; can be found on sourceforge. Now you need to extract and compile the source code using cmake(the instructions mentioned below work on linux; for windows you can use use cmake-GUI).&lt;/p&gt;
+
+&lt;p&gt;Note that the official documentation recommends installing it in a working directory, rather than with sudo or admin privileges. Supposing you downloaded it in &lt;em&gt;Downloads&lt;/em&gt;, open terminal — note that &lt;code class=&quot;highlighter-rouge&quot;&gt;xxx&lt;/code&gt; is downloaded zip library version&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/Downloads
+unzip arucoxxx.zip
+cd aurucoxxx
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=&amp;lt;pathToInstall&amp;gt;
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here the &lt;em&gt;pathToInstall&lt;/em&gt; will be preferred location. I kept it in the same folder as&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-DCMAKE_INSTALL_PREFIX=../aruco_src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*DIdAo2rIuXSnCF0gGNLl5A.png&quot; alt=&quot;If you can see this, you’ve completed the installation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To make sure that ArUco finds the correct library files, generate a config file(refer &lt;a href=&quot;http://miloq.blogspot.in/2012/12/install-aruco-ubuntu-linux.html&quot;&gt;this blog&lt;/a&gt; for more).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gedit /etc/ld.so.conf.d/aruco.conf
+# Add the following line and save it:
+# /usr/local/lib
+
+# Now, in your terminal, execute:
+sudo ldconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Note that since the installation is not global you’ve to &lt;strong&gt;always include&lt;/strong&gt; &lt;em&gt;pathToInstall&lt;/em&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;CMakeLists.txt&lt;/code&gt; file of your project as&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Adding local ArUco Library
+include_directories(/home/&amp;lt;pc-name&amp;gt;/Downloads/arucoxxx/aruco_src/include/)
+link_directories(/home/&amp;lt;pc-name&amp;gt;/Downloads/arucoxxx/aruco_src/lib/)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it. Found this article helpful? If so, please comment below. Feel free to ask any questions.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Jan 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/01/31/Setup-ArUco-PC.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/01/31/Setup-ArUco-PC.html</guid>
+        
+        <category>ArUCo</category>
+        
+        <category>OpenCV</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Introduction to ArUco</title>
+        <description>&lt;h2 id=&quot;building-an-ar-marker-detection-program-using-aruco-library&quot;&gt;Building an AR Marker Detection program using ArUco Library&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*8hvVNfI8geQxe0QKVZQovw.png&quot; alt=&quot;Marker detection and object rendering using opencv&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduction-to-ar-using-aruco&quot;&gt;Introduction to AR using ArUco&lt;/h2&gt;
+&lt;p&gt;While the current MR development revolves around hardware such as phones with depth sensors, Microsoft HoloLens, or HTC Vive, novices shouldn’t be undermined from the learning experience. Thanks to open source alternatives such as OpenCV and ArUco library, novices can develop AR apps using webcams for image input.&lt;/p&gt;
+
+&lt;h2 id=&quot;pre-requisites&quot;&gt;Pre Requisites&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A desktop or laptop with webcam&lt;/li&gt;
+  &lt;li&gt;Setup ArUco on device. Refer my previous post&lt;/li&gt;
+  &lt;li&gt;Familiarity with OpenCV in C++. Refer the official website for tutorial
+Although I tried it on linux, windows users can google build commands&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-aruco&quot;&gt;Why ArUco?&lt;/h2&gt;
+&lt;p&gt;The official docs state,&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ArUco: a minimal library for Augmented Reality applications based on OpenCV
+Unlike recent libraries such as Unity, ARToolkit and SDK’s such as Google’s ARCore, ArUco offers easy setup and deployment. With just a few lines of code, one can develop an app for AR Marker detection and simple object rendering. Its suitable for beginning your AR journey — fast.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;jump-start-to-the-code&quot;&gt;Jump Start to the code&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Start the webcam : Create a camera capture object that queries the device for live video.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Read the web cam
+CvCapture *capture = 0;
+capture = cvCreateCameraCapture( 0 );
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grab image from the webcam : OpenCV handles images in various formats. The simplest of all is a Mat object, storing images as matrices of their color values(RGB). Use the camera capture object to get the image from the webcam&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//read the input image
+IplImage *image = 0;
+image = cvQueryFrame(capture);
+// Gotta cast the image to Matrix
+// Remember all computations are in Mat form,all visuals aren't so
+cv::Mat InImage;
+InImage = cv::cvarrToMat(image);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Detect and Highlight the markers : ArUco employs special markers for object detection and pose estimation. These are lightweight squares that carry bits of information. For quick build, you can use ArUco’s inbuilt function draw to highlight the marker. First parameter is the image, Scalar(0,0,255) decides the boundary outline color(green in this case) and last parameter is the boundary width.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//Ok, let's detect
+MDetector.detect(InImage, Markers);
+//for each marker, draw info and its boundaries in the image
+for (auto &amp;amp;Marker : Markers) {
+    cout &amp;lt;&amp;lt; Marker &amp;lt;&amp;lt; endl;
+    Marker.draw(InImage, Scalar(0, 0, 255), 2);
+}
+The official repository provides a marker grid board in pdf format.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A 4x4 marker grid board. Credits : pokemonaaah.net&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Display Loop : Finally, display the image and set the program in a loop so as detect markers in live video stream. To stop, you can add a break condition.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// start the loop
+int key=0;
+while(key != 'q') {
+    // do the loop
+    cv::imshow(&quot;in&quot;, InImage);
+    key = cv::waitKey(1); //wait for key to be pressed
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;building-the-program-using-cmake&quot;&gt;Building The Program using CMake&lt;/h2&gt;
+&lt;p&gt;Note that unlike traditional programs, opencv programs (or C++ programs in general) require you to link source code to libraries you want to use. So you’ve to use tools such as CMake for a variety of purposes, namely&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To generate object files or executables&lt;/li&gt;
+  &lt;li&gt;To link source code to libraries&lt;/li&gt;
+  &lt;li&gt;Maintain project details(metadata, version, author)&lt;/li&gt;
+  &lt;li&gt;Include header files and other source code&lt;/li&gt;
+  &lt;li&gt;You will use a simple CMake script to build your project now. I won’t explain it much(refer the official tutorial). Create a text file CMakeLists.txt in the current directory with contents :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake_minimum_required(VERSION 2.8)
+project(helloAR)
+SET(CMAKE_MODULE_PATH ${CMAKE_INSTALL_PREFIX}/lib/cmake/ )
+set (CMAKE_CXX_FLAGS &quot;${CMAKE_CXX_FLAGS} -std=c++11&quot;)
+# Required packages
+find_package(OpenCV REQUIRED)
+# Adding local ARUco Library
+include_directories(pathToArUcoBuild/include/)
+link_directories(pathToArUcoBuild/lib/)
+add_executable(helloAR aruco_simple.cpp)
+target_link_libraries(helloAR ${OpenCV_LIBS} aruco)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The key takeaway is to include and link directories appropriately. Now open terminal and start build process&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd working_directory
+mkdir build
+cd build
+cmake ..
+make
+./helloAR
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+
+&lt;p&gt;Final marker detection result
+The build part may seem daunting at first(was for me). Using an IDE like Codeblocks or CLion will come handy as you develop more. For documentation, you can refer linux manpages (enter in terminalman cmake). You can get the full source code here.&lt;/p&gt;
+
+&lt;p&gt;That’s it. Were you able to develop this AR app? If yes, please leave a comment or if you have any questions.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Jan 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/blog/2018/01/31/Introduction-to-ArUco.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2018/01/31/Introduction-to-ArUco.html</guid>
+        
+        <category>ArUco</category>
+        
+        <category>AR</category>
+        
+        <category>OpenCV</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>

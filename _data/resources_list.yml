@@ -1,0 +1,10 @@
+# list of resources to be displayed
+
+- name: POTW(Problem Of The Week)
+  page: /potw/
+
+- name: CSOC
+  page: /csoc/
+
+- name: Dev Extravaganza
+  page: /extravaganza/

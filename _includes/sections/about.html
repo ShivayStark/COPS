@@ -1,0 +1,71 @@
+<div class="container" id="i18_about_me">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <h1><span data-i18n="about_me.about_me">About Us</span></h1>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
+        </div>
+    </div>
+    <div class="row">
+        <!-- first two icons -->
+        {% for icon in site.author.skill_icon1 %}
+        <div class="col-xs-2 wow fadeInLeft">
+            <div class="team-member">
+                <div class="vote-icon" style="text-align: center">
+                    <i class="fa {{ icon.name }}"></i>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- avatar -->
+        <div class="col-xs-4">
+            <div class="team-member wow zoomIn">
+                <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                <h4><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
+                <ul class="list-inline social-icon">
+                    {% if site.author.github_username %}
+                    <li style="padding: 2%"><a title="Github" href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                    {% endif %}
+                    {% if site.author.facebook_username %}
+                    <li style="padding: 2%"><a title="Facebook" href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
+                    {% endif %}
+                    {% if site.author.linkedin_id %}
+                    <li style="padding: 2%"><a title="Linkedin" href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                    {% endif %}
+                    {% if site.author.slack_username %}
+                    <li style="padding: 2%"><a title="Slack" href="https://cops-iitbhu.slack.com/" target="blank"><i class="fa fa-slack"></i></a></li>
+                    {% endif %}
+                    {% if site.author.googlegroup_username %}
+                    <li style="padding: 2%"><a title="Google Group" href="https://groups.google.com/forum/#!forum/copsiitbhu" target="blank"><i class="fa fa-google"></i></a></li>
+                    {% endif %}
+                    {% if site.author.twitter_username %}
+                    <li style="padding: 2%"><a title="Twitter" href="https://twitter.com/{{ site.author.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
+                    {% endif %}
+                    {% if site.author.email %}
+                    <li style="padding: 2%"><a Title="Mail" href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                    {% endif %}
+                    <li><a Title="RSS Feed" href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
+                    {% if site.author.cv %}
+                    <li style="padding: 2%"><a href="{{ site.author.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <!-- second two icons -->
+        {% for icon in site.author.skill_icon2 %}
+        <div class="col-xs-2 wow fadeInRight">
+            <div class="team-member">
+                <div class="vote-icon" style="text-align: center">
+                    <i class="fa {{ icon.name }}"></i>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
+            <p><span data-i18n="about_me.des">In this age of increasing automation, programming is not limited to only computer science and related fields. Every competent engineer needs to know how to program. This makes Club of Programmers one of the most important clubs in the institute.</span></p>
+            <p>Club of Programmers (or better known as COPS) understands this responsibility and plays a crucial part in maintaining the coding culture in the institute. Introductory workshops are held for freshers to introduce them to the various facets of programming. Regular competitions are held for the general student body to test and sharpen their programming skills. COPS also has an essential role in the successful conduction of Technex, the institute’s techno-management festival. ICM(International Coding Marathon) event organised by COPS in Technex attracts the maximum participation in the fest.</p>
+            <p>Although the club has been functioning quite well as compared to other clubs, still, a lot of things needs to be done. Some great initiatives were taken by the current secretaries, including the formation of smaller groups focussed on specific areas (competitive programming group, development group and machine learning group) and the fresher’s mentorship program. Still there are lot of things that the club can improve upon. We hope that we are able to take this momentum forward.</p>
+        </div>
+    </div>
+</div>
